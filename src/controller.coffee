@@ -34,8 +34,9 @@ angular.module 'builder.controller', ['builder.provider']
 
         $scope.optionsText = formObject.options.join '\n'
 
-        $scope.$watch '[label, description, placeholder, required, options, validation]', ->
+        $scope.$watch '[label, formName, description, placeholder, required, options, validation]', ->
             formObject.label = $scope.label
+            formObject.formName = $scope.formName
             formObject.description = $scope.description
             formObject.placeholder = $scope.placeholder
             formObject.required = $scope.required
@@ -58,6 +59,7 @@ angular.module 'builder.controller', ['builder.provider']
             ###
             @model =
                 label: $scope.label
+                formName: $scope.formName
                 description: $scope.description
                 placeholder: $scope.placeholder
                 required: $scope.required
@@ -69,6 +71,7 @@ angular.module 'builder.controller', ['builder.provider']
             ###
             return if not @model
             $scope.label = @model.label
+            $scope.formName = @model.formName
             $scope.description = @model.description
             $scope.placeholder = @model.placeholder
             $scope.required = @model.required

@@ -4,6 +4,7 @@ angular.module 'app', ['builder', 'builder.components', 'validator.rules']
     $builder.registerComponent 'sampleInput',
         group: 'from html'
         label: 'Sample'
+        formName: 'sample'
         description: 'From html template'
         placeholder: 'placeholder'
         required: no
@@ -25,6 +26,7 @@ angular.module 'app', ['builder', 'builder.components', 'validator.rules']
     textbox = $builder.addFormObject 'default',
         component: 'textInput'
         label: 'Name'
+        formName: 'name'
         description: 'Your name'
         placeholder: 'Your name'
         required: yes
@@ -32,6 +34,7 @@ angular.module 'app', ['builder', 'builder.components', 'validator.rules']
     checkbox = $builder.addFormObject 'default',
         component: 'checkbox'
         label: 'Pets'
+        formName: 'pets'
         description: 'Do you have any pets?'
         options: ['Dog', 'Cat']
     $builder.addFormObject 'default',

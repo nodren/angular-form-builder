@@ -7,6 +7,7 @@ angular.module 'builder.components', ['builder', 'validator.rules']
     $builderProvider.registerComponent 'textInput',
         group: 'Default'
         label: 'Text Input'
+        formName: 'text'
         description: 'description'
         placeholder: 'placeholder'
         required: no
@@ -32,6 +33,10 @@ angular.module 'builder.components', ['builder', 'validator.rules']
                 <div class="form-group">
                     <label class='control-label'>Label</label>
                     <input type='text' ng-model="label" validator="[required]" class='form-control'/>
+                </div>
+                <div class="form-group">
+                    <label class='control-name'>Name</label>
+                    <input type='text' ng-model="formName" validator="[required]" class='form-control'/>
                 </div>
                 <div class="form-group">
                     <label class='control-label'>Description</label>
@@ -66,6 +71,7 @@ angular.module 'builder.components', ['builder', 'validator.rules']
     $builderProvider.registerComponent 'textArea',
         group: 'Default'
         label: 'Text Area'
+        formName: 'textarea'
         description: 'description'
         placeholder: 'placeholder'
         required: no
@@ -85,6 +91,10 @@ angular.module 'builder.components', ['builder', 'validator.rules']
                 <div class="form-group">
                     <label class='control-label'>Label</label>
                     <input type='text' ng-model="label" validator="[required]" class='form-control'/>
+                </div>
+                <div class="form-group">
+                    <label class='control-name'>Name</label>
+                    <input type='text' ng-model="formName" validator="[required]" class='form-control'/>
                 </div>
                 <div class="form-group">
                     <label class='control-label'>Description</label>
@@ -115,6 +125,7 @@ angular.module 'builder.components', ['builder', 'validator.rules']
     $builderProvider.registerComponent 'checkbox',
         group: 'Default'
         label: 'Checkbox'
+        formName: 'checkbox'
         description: 'description'
         placeholder: 'placeholder'
         required: no
@@ -141,6 +152,10 @@ angular.module 'builder.components', ['builder', 'validator.rules']
                 <div class="form-group">
                     <label class='control-label'>Label</label>
                     <input type='text' ng-model="label" validator="[required]" class='form-control'/>
+                </div>
+                <div class="form-group">
+                    <label class='control-name'>Name</label>
+                    <input type='text' ng-model="formName" validator="[required]" class='form-control'/>
                 </div>
                 <div class="form-group">
                     <label class='control-label'>Description</label>
@@ -172,6 +187,7 @@ angular.module 'builder.components', ['builder', 'validator.rules']
     $builderProvider.registerComponent 'radio',
         group: 'Default'
         label: 'Radio'
+        formName: 'radio'
         description: 'description'
         placeholder: 'placeholder'
         required: no
@@ -198,6 +214,10 @@ angular.module 'builder.components', ['builder', 'validator.rules']
                     <input type='text' ng-model="label" validator="[required]" class='form-control'/>
                 </div>
                 <div class="form-group">
+                    <label class='control-name'>Name</label>
+                    <input type='text' ng-model="formName" validator="[required]" class='form-control'/>
+                </div>
+                <div class="form-group">
                     <label class='control-label'>Description</label>
                     <input type='text' ng-model="description" class='form-control'/>
                 </div>
@@ -221,6 +241,7 @@ angular.module 'builder.components', ['builder', 'validator.rules']
     $builderProvider.registerComponent 'select',
         group: 'Default'
         label: 'Select'
+        formName: 'select'
         description: 'description'
         placeholder: 'placeholder'
         required: no
@@ -242,6 +263,10 @@ angular.module 'builder.components', ['builder', 'validator.rules']
                 <div class="form-group">
                     <label class='control-label'>Label</label>
                     <input type='text' ng-model="label" validator="[required]" class='form-control'/>
+                </div>
+                <div class="form-group">
+                    <label class='control-name'>Name</label>
+                    <input type='text' ng-model="formName" validator="[required]" class='form-control'/>
                 </div>
                 <div class="form-group">
                     <label class='control-label'>Description</label>

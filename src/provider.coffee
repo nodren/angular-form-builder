@@ -43,6 +43,7 @@ angular.module 'builder.provider', []
             name: name
             group: component.group ? 'Default'
             label: component.label ? ''
+            formName: component.formName ? ''
             description: component.description ? ''
             placeholder: component.placeholder ? ''
             editable: component.editable ? yes
@@ -77,6 +78,7 @@ angular.module 'builder.provider', []
             editable: formObject.editable ? component.editable
             index: formObject.index ? 0
             label: formObject.label ? component.label
+            formName: formObject.formName ? component.formName
             description: formObject.description ? component.description
             placeholder: formObject.placeholder ? component.placeholder
             options: formObject.options ? component.options
@@ -121,6 +123,7 @@ angular.module 'builder.provider', []
         @param component: The component object.
             group: {string} The component group.
             label: {string} The label of the input.
+            formName: (string) The name of the input.
             description: {string} The description of the input.
             placeholder: {string} The placeholder of the input.
             editable: {bool} Is the form object editable?
@@ -162,6 +165,7 @@ angular.module 'builder.provider', []
             component: {string} The component name
             editable: {bool} Is the form object editable? (default is yes)
             label: {string} The form object label.
+            formName: (string) the form object name.
             description: {string} The form object description.
             placeholder: {string} The form object placeholder.
             options: {array} The form object options.

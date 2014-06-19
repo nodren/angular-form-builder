@@ -4,6 +4,7 @@
       return $builder.registerComponent('sampleInput', {
         group: 'from html',
         label: 'Sample',
+        formName: 'sample',
         description: 'From html template',
         placeholder: 'placeholder',
         required: false,
@@ -32,6 +33,7 @@
       textbox = $builder.addFormObject('default', {
         component: 'textInput',
         label: 'Name',
+        formName: 'name',
         description: 'Your name',
         placeholder: 'Your name',
         required: true,
@@ -40,6 +42,7 @@
       checkbox = $builder.addFormObject('default', {
         component: 'checkbox',
         label: 'Pets',
+        formName: 'pets',
         description: 'Do you have any pets?',
         options: ['Dog', 'Cat']
       });
